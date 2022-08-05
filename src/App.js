@@ -10,8 +10,8 @@ import Alert from './components/layout/Alert'
 import User from './pages/User'
 function App() {
   return (
-    <AlertProvider>
-      <GithubProvider>
+    <GithubProvider>
+      <AlertProvider>
         <Router>
           <div className='flex flex-col justify-between h-screen'>
             <Navbar />
@@ -28,8 +28,8 @@ function App() {
             <Footer />
           </div>
         </Router>
-      </GithubProvider>
-    </AlertProvider>
+      </AlertProvider>
+    </GithubProvider>
   )
 }
 export default App
